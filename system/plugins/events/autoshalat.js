@@ -16,6 +16,7 @@ async function events(m, { sock }) {
 
   let jadwalSholat = {
     Shubuh: "04:45",
+    Dhuha: "06:20",
     Dhuhur: "11:55",
     Ashar: "15:15",
     Maghrib: "18:05",
