@@ -407,7 +407,7 @@ Perangkat telah terhubung, berikut detailnya:
           const demoteCanvas = await new canvafy.WelcomeLeave()
             .setAvatar(demoteImageBuffer)
             .setBackground("image", "https://e.top4top.io/p_31964qbk71.jpg")
-            .setTitle("P r o m o t e")
+            .setTitle("D e m o t e")
             .setDescription(`Terimakasih`)
             .setBorder("#2a2e35")
             .setAvatarBorder("#2a2e35")
