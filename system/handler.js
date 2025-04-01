@@ -36,7 +36,7 @@ module.exports = async (m, sock, store) => {
     !m.key.remoteJid.endsWith("status@broadcast") &&
     !m.fromMe &&
     !m.isOwner &&
-    !isPrems &&
+    !m.isPrems &&
     !m.cht.endsWith("g.us")
   ) {
     let caption = `*– Bot tidak dapat diakses di private chat*\n
