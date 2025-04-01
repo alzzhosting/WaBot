@@ -1,47 +1,7 @@
-![Logo](https://files.catbox.moe/45rmzn.jpg)
-
-**Takeshi-WaBot | 1.1.0** | ***create by KuroTakeshi***
-
-
-```> Simple WhatsApp bot Using Library Baileys```
-
-```javascript
-{
-  message: Message { conversation: '>_ Welcome to Takeshi-WaBot' },
-  type: 'conversation',
-  msg: '>_ Welcome to Takeshi-WaBot',
-  isMedia: false,
-  key: {
-    remoteJid: '0@s.whatsapp.net',
-    participant: '0@s.whatsapp.net',
-    fromMe: false,
-    id: '5780C33F89C0BE600B6D71DF79C4FC02'
-  },
-  cht: '0@s.whatsapp.net',
-  fromMe: false,
-  id: '5780C33F89C0BE600B6D71DF79C4FC02',
-  device: 'android',
-  isBot: false,
-  isGroup: false,
-  participant: '0@s.whatsapp.net',
-  sender: '0@s.whatsapp.net',
-  mentions: [],
-  body: '>_ Welcome to Takeshi-WaBot',
-  prefix: '',
-  command: '>_',
-  args: [ 'Welcome', 'to', 'Takeshi-WaBot' ],
-  text: 'Welcome to Takeshi-WaBot',
-  isOwner: true,
-  download: [AsyncFunction (anonymous)]
-}
-```
-## ⚙️ Settings Bot ***( settings/configuration.js )***
-
-```javascript
 const fs = require("fs");
 
 const config = {
-  author: "Lorenzxz",
+  author: "KuroTakeshi",
   botNumber: "0",
   database: "takeshi-database",
   inviteCode: "CtnxNzmlxLOJqeSlxdQXTz",
@@ -138,60 +98,9 @@ const config = {
 };
 
 module.exports = config;
-```
 
-
-## 👨‍💻 How to install/run
-
-
-```bash
-$ git clone https://github.com/KuroTakeshi/Takeshi-WaBot
-$ cd Takeshi-WaBot
-$ npm install
-$ npm start
-```
-
-## ☘️ Example Features
-Berikut cara menambahkan fitur pada bot ini
-
-## 1. Plugins
-
-```javascript
-
-module.exports = {
-    command: "tes", //- Nama fitur nya
-    alias: ["tesbot", "testing"], //- Short cut command
-    category: ["main"], //- Kategori Fitur 
-    loading: false, // - Apakah Fitur ini ada loading nya ?
-    react: "💻", // - Ini adalah custom react selain react dari loading
-    settings: {
-        limit: 10, // - Apakah Fitur ini memerlukan limit, jika menggunakan "true" maka akan menggunakan 1 limit 
-        owner: false, // -  Apakah Fitur ini khusus owner ?
-        group: false, // - Apakah Fitur ini khusus group ?
-        register: false, // - Apakah Fitur ini harus register ?
-     },
-    description: "Tes bot saja", //- Penjelasan tentang fitur nya
-    loading: true, //- Ingin menambahkan loading messages ?
- async run(m, { sock, Func, Api, Msg, Scraper, text, config }) {
-    m.reply("> Bot Online ✓")
-  }
-}
-```
-## 2. Case
-
-```javascript
-case "tes" : {
-   // category: "main" 
-   // - Category agar case ini masuk kedalam category yang ada di menu
-     m.reply("> Bot Online ✓")
-   }
-break
-```
-## 📢 Discussion 
-Jika ingin mengenal seputar Script ini lebih dalam lagi
-silahkan mampir ke komunitas kami
-
-[![WhatsApp Group](https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/BSiAQ2Wn3Mp8egl7Y3qVgQ)
-
-[![WhatsApp channel](https://img.shields.io/badge/WhatsApp%20Channel-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://whatsapp.com/channel/0029VbALRiqHltY7owUWhr3H)
-
+let file = require.resolve(__filename);
+fs.watchFile(file, () => {
+  fs.unwatchFile(file);
+  delete require.cache[file];
+});
