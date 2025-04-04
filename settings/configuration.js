@@ -1,19 +1,19 @@
 const fs = require("fs");
 
 const config = {
-  author: "KuroTakeshi",
-  botNumber: "0",
+  author: "Kenz Shop",
+  botNumber: "085198484446",
   database: "takeshi-database",
   inviteCode: "CtnxNzmlxLOJqeSlxdQXTz",
-  name: "- Takeshi - Simple WhatsApp bot",
-  owner: ["0", "0"],
+  name: "- Kenz - Simple WhatsApp bot",
+  owner: ["085934686607"],
   prefix: ["!", ".", "#", "/"],
   sessions: "sessions",
   tz: "Asia/Jakarta",
 
   id: {
-    group: "1@g.us",
-    newsletter: "1@newsletter",
+    group: "120363354765919140@g.us",
+    newsletter: "120363376589165265@newsletter",
   },
 
   style: {
@@ -83,8 +83,8 @@ const config = {
   sticker: {
     androidApp:
       "https://play.google.com/store/apps/details?id=com.bitsmedia.android.muslimpro",
-    author: "🐾 Lorenzxz 🐾",
-    email: "lorenzxz@gmail.com",
+    author: "🐾 KenzShop 🐾",
+    email: "kenzzudahjago@gmail.com",
     emojis: [],
     iOSApp:
       "https://apps.apple.com/id/app/muslim-pro-al-quran-adzan/id388389451?|=id",
