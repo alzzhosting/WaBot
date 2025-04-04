@@ -145,7 +145,7 @@ module.exports = config;
 
 
 ```bash
-$ git clone https://github.com/KuroTakeshi/Takeshi-WaBot
+$ git clone https://github.com/alzzhosting/WaBot.git
 $ cd Takeshi-WaBot
 $ npm install
 $ npm start
